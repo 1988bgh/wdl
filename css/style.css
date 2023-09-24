@@ -352,6 +352,7 @@ footer {
   position: sticky;
   top: 0;
   height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
 }
 .intro__typo-box {
   position: absolute;
@@ -472,7 +473,7 @@ footer {
 .profile__view-box {
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: calc(var(--vh, 1vh) * 100);
   overflow-y: auto;
   overflow-x: hidden;
@@ -692,6 +693,7 @@ footer {
 
 .c__contact {
   padding: 4vw 10vw;
+  overflow: hidden;
 }
 .c__contact .form-flexbox {
   display: flex;
