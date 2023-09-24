@@ -14,6 +14,19 @@ header {
     width: 12vw;
     margin-right: auto;
   }
+  nav {
+    a {
+      color: #000;
+      font-size: 1.2vw;
+      margin: 0 1vw;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
   .progressbar {
     position: absolute;
     top: 100%;

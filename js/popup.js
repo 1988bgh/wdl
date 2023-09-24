@@ -1,4 +1,4 @@
-import { smoothScroll } from "./smooth.js";
+// import { smoothScroll } from "./smooth.js";
 
 export const popupHandler = () => {
   const bodyEl = document.querySelector("body");
@@ -23,14 +23,10 @@ export const popupHandler = () => {
     popupEl.classList.add("open");
     bodyEl.classList.add("open");
     popupScrollEl.scrollTop = 0;
-    smoothScroll.status.mode = "popup";
-    smoothScroll.init();
   });
 
   closedBtn.addEventListener("click", () => {
     popupEl.classList.remove("open");
     bodyEl.classList.remove("open");
-    smoothScroll.status.mode = null;
-    smoothScroll.init();
   });
 };

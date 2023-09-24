@@ -1,5 +1,5 @@
 import { loadingMotion } from "./loading.js";
-import { smoothScroll } from "./smooth.js";
+// import { smoothScroll } from "./smooth.js";
 import { motionsScroll } from "./motions.js";
 import { popupHandler } from "./popup.js";
 import { instagramHandler } from "./instagram.js";
@@ -354,7 +354,6 @@ const scrollProject = (() => {
   const _initialize = () => {
     loadingMotion();
     pageMoveHandler();
-    smoothScroll.init();
     popupHandler();
     instagramHandler.init();
     _addEvent();

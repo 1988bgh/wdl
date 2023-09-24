@@ -225,6 +225,17 @@ header .logo {
   width: 12vw;
   margin-right: auto;
 }
+header nav a {
+  color: #000;
+  font-size: 1.2vw;
+  margin: 0 1vw;
+}
+header nav a:first-child {
+  margin-left: 0;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
 header .progressbar {
   position: absolute;
   top: 100%;
@@ -317,7 +328,7 @@ footer {
 }
 
 .c__intro {
-  height: calc(var(--vh, 1vh) * 1500);
+  height: calc(var(--vh, 1vh) * 2000);
 }
 
 .intro__scroll-mark {
@@ -456,7 +467,7 @@ footer {
 }
 
 .profile__sticky-box {
-  height: calc(var(--vh, 1vh) * 800);
+  height: calc(var(--vh, 1vh) * 1500);
 }
 .profile__view-box {
   position: sticky;
