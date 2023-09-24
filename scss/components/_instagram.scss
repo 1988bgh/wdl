@@ -1,0 +1,63 @@
+.c__instagram {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10vw 0;
+  overflow: hidden;
+}
+
+.instagram__ {
+  &typo {
+    margin-right: 10vw;
+    margin-left: 2vw;
+  }
+  &title {
+    margin-bottom: 1.5vw;
+    font-size: 8vw;
+    background: linear-gradient(to right top, $theme-color1, $theme-color2);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  &desc {
+    color: #555;
+    font-size: 1.6vw;
+  }
+  &controller {
+    margin-top: 4vw;
+    button {
+      width: 4vw;
+      height: 4vw;
+      color: $theme-color4;
+      font-size: 1.6vw;
+      border: 0.2vw solid $theme-color4;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+  &slider-box {
+    overflow: hidden;
+    height: 40.258vw;
+  }
+  &latest {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      height: 100%;
+      a {
+        display: block;
+        height: 100%;
+        color: #000;
+        picture {
+          display: block;
+          height: 100%;
+          transition: 0.1s ease-out;
+          overflow: hidden;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

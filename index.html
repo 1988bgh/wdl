@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Diet Lab</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js" defer></script>
+    <script src="./js/mouse.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/922767c096.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="c__loading">
+        <span class="typo">
+          <span style="--variable-index: 0">W</span>
+          <span style="--variable-index: 1">E</span>
+          <span style="--variable-index: 2">L</span>
+          <span style="--variable-index: 3">L</span>
+          <span style="--variable-index: 4">N</span>
+          <span style="--variable-index: 5">E</span>
+          <span style="--variable-index: 6">S</span>
+          <span style="--variable-index: 7">S</span>
+          <span style="--variable-index: 8">D</span>
+          <span style="--variable-index: 9">I</span>
+          <span style="--variable-index: 10">E</span>
+          <span style="--variable-index: 11">T</span>
+          <span style="--variable-index: 12">L</span>
+          <span style="--variable-index: 13">A</span>
+          <span style="--variable-index: 14">B</span></span
+        >
+        <div class="container">
+          <div class="dot dot-1"></div>
+          <div class="dot dot-2"></div>
+          <div class="dot dot-3"></div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div id="cursor">
+        <div class="cursor__circle"></div>
+      </div>
+      <header>
+        <h1 class="logo">
+          <a href="/"
+            ><img src="./images/header/logo.svg" alt="Wellness Diet Lab"
+          /></a>
+        </h1>
+        <div class="progressbar"></div>
+      </header>
+      <section id="intro" class="c__intro">
+        <div class="intro__scroll-mark">
+          SCROLL DOWN <i class="fa-solid fa-computer-mouse"></i>
+        </div>
+        <div class="intro__sticky-box">
+          <div class="intro__typo-box">
+            <div class="intro__typo-a intro__motions-typo">
+              <span style="--variable-index: 0">W</span>
+              <span style="--variable-index: 1">e</span>
+              <span style="--variable-index: 2">l</span>
+              <span style="--variable-index: 3">l</span>
+              <span style="--variable-index: 4">n</span>
+              <span style="--variable-index: 5">e</span>
+              <span style="--variable-index: 6">s</span>
+              <span style="--variable-index: 7">s</span>
+              <span style="--variable-index: 8">D</span>
+              <span style="--variable-index: 9">i</span>
+              <span style="--variable-index: 10">e</span>
+              <span style="--variable-index: 11">t</span>
+              <span style="--variable-index: 12">L</span>
+              <span style="--variable-index: 13">a</span>
+              <span style="--variable-index: 14">b</span>
+            </div>
+            <div class="intro__typo-b intro__motions-typo">
+              <span>어떤</span> <span class="point">다이어트를</span>
+              <span>원하시나요?</span>
+            </div>
+            <div class="intro__typo-c intro__motions-typo">건강한</div>
+            <div class="intro__typo-d intro__motions-typo">다이어트를</div>
+            <div class="intro__typo-e intro__motions-typo">연구합니다</div>
+            <p class="intro__desc type-a">
+              웰니스 다이어트 랩은 건강한 다이어트를 연구합니다. 1
+            </p>
+            <p class="intro__desc type-b">
+              웰니스 다이어트 랩은 건강한 다이어트를 연구합니다. 2
+            </p>
+            <p class="intro__desc type-c">
+              웰니스 다이어트 랩은 건강한 다이어트를 연구합니다. 3
+            </p>
+          </div>
+          <div class="intro__image-box">
+            <div class="intro__images"></div>
+            <div class="intro__images"></div>
+            <div class="intro__images"></div>
+          </div>
+        </div>
+      </section>
+      <section id="profile" class="c__profile">
+        <div class="profile__sticky-box">
+          <div class="profile__view-box">
+            <div class="profile__grid-box">
+              <div class="profile__section">
+                <a
+                  href="javascript:void(0)"
+                  class="profile__popup-open"
+                  data-index="0"
+                  cursor-class="arrow"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="./images/teachers/teacher-img-01.jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/teachers/teacher-img-01.jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/teachers/teacher-img-01.jpeg"
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </div>
+              <div class="profile__section">
+                <a
+                  href="javascript:void(0)"
+                  class="profile__popup-open"
+                  data-index="1"
+                  cursor-class="arrow"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="./images/teachers/teacher-img-02.jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/teachers/teacher-img-02.jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/teachers/teacher-img-02.jpeg"
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </div>
+              <div class="profile__section">
+                <a
+                  href="javascript:void(0)"
+                  class="profile__popup-open"
+                  data-index="2"
+                  cursor-class="arrow"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="./images/teachers/teacher-img-03.jpeg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/teachers/teacher-img-03.jpeg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/teachers/teacher-img-03.jpeg"
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <div class="profile__typo">
+              <h2>Wellness Diet Lab</h2>
+              <div class="typo__desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis sapiente provident explicabo sed officia. Aspernatur
+                  officia corrupti dolore at sint possimus neque, maxime,
+                  quaerat ipsa voluptas ad quia doloremque molestias?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profile__popup">
+        <a href="javascript:void(0)" class="closed__btn" cursor-class="arrow">
+          <span class="line left"></span>
+          <span class="line right"></span>
+        </a>
+        <div class="profile__popup-box">
+          <div class="popup__images">
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="./images/teachers/teacher-img-01.jpeg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/teachers/teacher-img-01.jpeg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/teachers/teacher-img-01.jpeg"
+              />
+              <img src="" alt="" />
+            </picture>
+          </div>
+          <div class="popup__desc">
+            <div class="popup__info">
+              <h2 class="popup__name">Name</h2>
+              <div class="popup__sns">
+                <a href="javascript:void(0)">#KAKAO</a>
+                <a href="javascript:void(0)">#INSTAGRAM</a>
+                <a href="javascript:void(0)">#BLOG</a>
+              </div>
+            </div>
+            <ul class="popup__spec">
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+              <li>Lorem ipsum dolor</li>
+            </ul>
+            <div class="introduce-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+              dolor dolorem suscipit, iste quidem, quam alias odit similique vel
+              a odio obcaecati nemo culpa quia quod, dolores dignissimos
+              aspernatur veritatis? Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Cum dolor dolorem suscipit, iste quidem, quam
+              alias odit similique vel a odio obcaecati nemo culpa quia quod,
+              dolores dignissimos Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Cum dolor dolorem suscipit, iste quidem, quam
+              alias odit similique vel a odio obcaecati nemo culpa quia quod,
+              dolores dignissimos aspernatur veritatis? Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Cum dolor dolorem suscipit,
+              iste quidem, quam alias odit similique vel a odio obcaecati nemo
+              culpa quia quod, dolores dignissimos.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="story" class="c__instagram">
+        <div class="instagram__typo">
+          <h2 class="instagram__title">WDL STORY</h2>
+          <p class="instagram__desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+          <div class="instagram__controller">
+            <button type="button" class="prev" cursor-class="arrow">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button type="button" class="next" cursor-class="arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="instagram__slider-box">
+          <div class="instagram__latest">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="javascript:void(0)" cursor-class="arrow">
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2813&q=80
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2813&q=80
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2813&q=80
+                      "
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="javascript:void(0)" cursor-class="arrow">
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1560717845-968823efbee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="javascript:void(0)" cursor-class="arrow">
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="javascript:void(0)" cursor-class="arrow">
+                  <picture>
+                    <source
+                      media="(min-width: 1025px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+                      "
+                    />
+                    <img src="" alt="" />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="c__contact">
+        <h2 class="contact__title">CONTACT</h2>
+        <p class="contact__desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="contact__agree-contents">
+          <p>
+            웰니스 다이어트 랩에서 아래의 목적으로 본인의 개인정보를 수집 및
+            이용하는 것에 동의합니다. 단, 동의 거부 시 1:1문의 및 답변 회신 등이
+            불가할 수 있습니다.
+          </p>
+          <ul>
+            <li>
+              <span>1. 수집하는 개인정보 항목</span>
+              성명,전화번호,소속,이메일 주소
+            </li>
+            <li>
+              <span>2. 이용목적</span>
+              1:1문의사항에 대한 회신 및 조치 등 민원해결, 기타 고지사항 전달
+            </li>
+            <li><span>3. 보유 및 이용기간</span> 1:1문의 후 3년까지</li>
+          </ul>
+          <p>
+            회원님의 개인정보 수집 및 이용을 거부할 권리가 있습니다. 다만 필수적
+            정보 수집 및 이용을 거부하실 경우 접수해주신 1:1문의에 대한 처리가
+            제한될 수 있습니다.
+          </p>
+        </div>
+        <div class="contact__agree">
+          <input type="checkbox" id="agree_chk" />
+          <div class="agree_chkbox"></div>
+          <label for="agree_chk"
+            >비회원 개인정보 수집 및 이용에 관한 동의<span>(필수)</span></label
+          >
+        </div>
+        <form class="contact__form">
+          <div class="form-flexbox">
+            <div class="form-item">
+              <input type="text" name="user_name" placeholder="이름" required />
+            </div>
+            <div class="form-item">
+              <input type="text" placeholder="소속/회사" name="user_team" />
+            </div>
+          </div>
+          <div class="form-flexbox">
+            <div class="form-item">
+              <input type="text" name="phone" placeholder="전화번호" required />
+            </div>
+            <div class="form-item">
+              <input type="text" name="email" placeholder="이메일" required />
+            </div>
+          </div>
+          <textarea
+            name="message"
+            placeholder="문의하실 내용을 입력해주세요"
+            required
+          ></textarea>
+          <button type="submit" cursor-class="arrow">문의하기</button>
+        </form>
+      </section>
+      <footer>Footer 영역으로 주소,대표전화번호,이메일 등이 들어갑니다.</footer>
+    </main>
+  </body>
+</html>

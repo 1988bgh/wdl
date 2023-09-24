@@ -1,0 +1,24 @@
+@media screen and (min-width: 1025px) {
+  .instagram__ {
+    &controller {
+      button {
+        &:hover {
+          color: #fff;
+          background: linear-gradient(
+            to right top,
+            $theme-color1,
+            $theme-color2
+          );
+          border: 1px solid #fff;
+        }
+      }
+    }
+    &latest {
+      li {
+        &:hover picture {
+          border-radius: 10vw 0 10vw 0;
+        }
+      }
+    }
+  }
+}

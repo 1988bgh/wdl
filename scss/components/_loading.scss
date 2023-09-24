@@ -1,0 +1,77 @@
+.c__loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+  z-index: 100;
+  overflow: hidden;
+
+  &.loaded {
+    opacity: 0;
+  }
+  .typo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: $theme-color3;
+    font-size: 3vw;
+    mix-blend-mode: difference;
+    z-index: 1;
+    span {
+      display: block;
+      letter-spacing: 0.5em;
+      animation: variable-updown 4s infinite both;
+      animation-delay: var(--delay);
+      text-align: center;
+      --delay: calc((var(--variable-index) + 1) * 0.15s);
+    }
+  }
+  .container {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: url("#goo");
+    animation: rotate-move 2s ease-in-out infinite;
+  }
+
+  .dot {
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .dot-3 {
+    background: linear-gradient(to right top, $theme-color1, $theme-color2);
+    animation: dot-3-move 2s ease infinite;
+  }
+
+  .dot-2 {
+    background-color: $theme-color2;
+    animation: dot-2-move 2s ease infinite;
+  }
+
+  .dot-1 {
+    background-color: $theme-color1;
+    animation: dot-1-move 2s ease infinite;
+  }
+}

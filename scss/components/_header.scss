@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 8);
+  padding: 0 3vw;
+  background-color: #fff;
+  z-index: 5;
+  border-bottom: 1px solid #eee;
+  .logo {
+    width: 12vw;
+    margin-right: auto;
+  }
+  .progressbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 0.5vw;
+    background: linear-gradient(to right top, $theme-color1, $theme-color2);
+  }
+}
