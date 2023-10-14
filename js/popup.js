@@ -1,4 +1,4 @@
-// import { smoothScroll } from "./smooth.js";
+import { smoothScroll } from "./smooth.js";
 
 export const popupHandler = () => {
   const bodyEl = document.querySelector("body");
@@ -10,6 +10,8 @@ export const popupHandler = () => {
   let targetElem;
 
   openBtnWrap.addEventListener("click", (e) => {
+    smoothScroll.status.mode = "popup";
+    smoothScroll.addEvent();
     targetElem = e.target;
 
     while (!targetElem.classList.contains("profile__popup-open")) {
@@ -26,6 +28,8 @@ export const popupHandler = () => {
   });
 
   closedBtn.addEventListener("click", () => {
+    smoothScroll.status.mode = "null";
+    smoothScroll.addEvent();
     popupEl.classList.remove("open");
     bodyEl.classList.remove("open");
   });

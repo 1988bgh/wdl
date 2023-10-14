@@ -1,9 +1,9 @@
 import { loadingMotion } from "./loading.js";
-// import { smoothScroll } from "./smooth.js";
+import { smoothScroll } from "./smooth.js";
 import { motionsScroll } from "./motions.js";
 import { popupHandler } from "./popup.js";
 import { instagramHandler } from "./instagram.js";
-import { pageMoveHandler } from "./header.js";
+import { emailJsHandler } from "./contact.js";
 
 const scrollProject = (() => {
   const settingHeight = () => {
@@ -117,7 +117,7 @@ const scrollProject = (() => {
         startPoint: 0.52,
         endPoint: 0.6,
         startValue: 1,
-        endValue: 0.6,
+        endValue: 0.8,
       },
       move_left_typo: {
         startPoint: 0.52,
@@ -353,9 +353,10 @@ const scrollProject = (() => {
 
   const _initialize = () => {
     loadingMotion();
-    pageMoveHandler();
+    smoothScroll.init();
     popupHandler();
     instagramHandler.init();
+    emailJsHandler.init();
     _addEvent();
     _resize();
   };

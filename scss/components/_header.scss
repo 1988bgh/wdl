@@ -14,14 +14,13 @@ header {
     width: 12vw;
     margin-right: auto;
   }
-  nav {
+  .sns__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
-      color: #000;
-      font-size: 1.2vw;
-      margin: 0 1vw;
-      &:first-child {
-        margin-left: 0;
-      }
+      width: 3vw;
+      margin-right: 0.8vw;
       &:last-child {
         margin-right: 0;
       }

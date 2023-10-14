@@ -1,26 +1,48 @@
 .c__intro {
-  height: calc(var(--vh, 1vh) * 2000);
+  height: calc(var(--vh, 1vh) * 1000);
 }
 
 .intro__ {
   &scroll-mark {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
+    bottom: 5vw;
     left: 0;
     width: 100%;
-    height: calc(var(--vh, 1vh) * 100);
-    padding-bottom: 5vw;
     color: $theme-color3;
     font-size: 1.6vw;
+    z-index: 3;
     i {
       margin-left: 1vw;
       color: #ddd;
     }
   }
-
+  &link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw 2vw;
+      border-radius: 2vw;
+      margin: 0 0.25vw;
+      &.naver {
+        background-color: #888;
+      }
+      &.instagram {
+        background-color: #888;
+      }
+      i {
+        margin-left: 0.3vw;
+      }
+    }
+  }
   &sticky-box {
     position: sticky;
     top: 0;
@@ -34,7 +56,6 @@
     transform: translate3d(-50%, -50%, 0);
     width: 90%;
     text-align: center;
-    filter: blur(0);
   }
   &motions-typo {
     position: absolute;
@@ -92,11 +113,11 @@
     transform: translate3d(-32%, 50%, 0);
   }
   &desc {
-    width: 30vw;
+    width: 40vw;
     color: #888;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     position: absolute;
-    top: 14vw;
+    top: 15vw;
     left: 30vw;
     text-align: left;
     word-break: keep-all;

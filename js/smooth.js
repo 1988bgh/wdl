@@ -45,7 +45,7 @@ export const smoothScroll = (() => {
     }
   };
 
-  const _addEvnt = () => {
+  const _addEvent = () => {
     if (status.mode !== "popup") {
       _target.addEventListener("wheel", scrolled, { passive: false });
       _target.addEventListener("mousewheel", scrolled, { passive: false });
@@ -56,11 +56,12 @@ export const smoothScroll = (() => {
   };
 
   const _initialize = () => {
-    _addEvnt();
+    _addEvent();
   };
 
   return {
     init: _initialize,
     status: status,
+    addEvent: _addEvent,
   };
 })();
