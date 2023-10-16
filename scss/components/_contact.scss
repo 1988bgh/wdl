@@ -13,11 +13,9 @@
         margin-right: 0;
       }
       span {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        font-size: 1.2vw;
+        display: block;
+        margin-bottom: 0.5vw;
+        font-size: 1vw;
       }
       input {
         display: block;
@@ -97,7 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
     .agree_chkbox {
       width: 1.5vw;
       height: 1.5vw;
